@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+$paddingDirection: ("right", "left", "top", "bottom");
+$paddingLength: (0, 2, 4, 6, 8, 10, 12, 15, 20, 25, 30, 35, 40, 45, 50);
+// if you only wants to use "padding" without postfix
+@each $len in $paddingLength {
+  .padding-#{$len} {
+    padding: #{$len}px;
+  }
+}
+
+// if you want to use padding-left, padding-right etc.
+@each $dir in $paddingDirection {
+  @each $len in $paddingLength {
+    .padding-#{$dir}-#{$len} {
+      padding-#{$dir}: #{$len}px;
+    }
+  }
+}

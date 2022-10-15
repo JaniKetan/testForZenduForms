@@ -1,0 +1,129 @@
+.exportbut {
+  width: 47px;
+  height: 21px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  color: #2188d9;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+::ng-deep .p-calendar {
+  width: 100% !important;
+}
+
+.tag {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 16px;
+  border-radius: 4px;
+}
+.tagRed {
+  border: 1px solid #ff3d00;
+  background: rgba(255, 61, 0, 0.1);
+  width: 128px;
+  height: 27px;
+}
+
+.tagGreen {
+  background: #d7e5da;
+  border: 1px solid #53d86a;
+}
+
+.tagGray {
+  background: #ececed;
+  border: 1px solid #b8b9bc;
+}
+.font-14-red {
+  font-size: 14px;
+  color: #ff3d00;
+  margin-left: 8px;
+}
+.font-14-green {
+  font-size: 14px;
+  color: #53d86a;
+  margin-left: 8px;
+}
+.font-14-gray {
+  font-size: 14px;
+  color: #b8b9bc;
+  margin-left: 8px;
+}
+
+.from,
+.to,
+.duedate {
+  height: 21px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #b8b9bc;
+}
+
+.font-16 {
+  font-size: 16px;
+  align-items: center;
+  padding-left: 8px;
+}
+.font-red {
+  font-size: 16px;
+  align-items: center;
+  color: #ff3d00;
+  font-weight: 500;
+  padding-left: 8px;
+}
+
+.card {
+  margin: 8px 0px;
+  width: 459px;
+  height: 144px;
+}
+.card:first-child {
+  margin-top: 0px;
+}
+
+.my-5 {
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
+}
+
+::ng-deep .p-inputgroup-addon {
+  background: transparent !important;
+}
+
+::ng-deep .p-calendar .p-inputtext {
+  border-left: none;
+  border-radius: 0px 6px 6px 0px;
+  height: 48px;
+}
+
+li:active {
+  background-color: #1773bb;
+}
+.searchInput {
+  width: 334px;
+  height: 48px;
+}
+::ng-deep .p-dropdown {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 209px;
+  height: 48px;
+}
+.calendarDiv {
+  width: 209px;
+  height: 48px;
+}
+
+.p-inputgroup-addon:first-child,
+.p-inputgroup button:first-child {
+  height: 48px;
+}

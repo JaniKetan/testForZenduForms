@@ -1,0 +1,258 @@
+<div>
+  <div class="bodyDiv">
+    <div class="padding-left-40 padding-right-40">
+      <div class="d-flex w-100 my-5">
+        <div class="titleText f-32 font-bold">Submissions</div>
+      </div>
+      <div class="configPanel d-flex">
+        <div class="md:col-9 d-flex">
+          <div class="field padding-right-40">
+            <span class="p-input-icon-left w-100">
+              <i class="pi pi-search"></i>
+              <input
+                class="searchInput"
+                type="text"
+                id="inputtext-left"
+                pInputText
+                [(ngModel)]="valueIconLeft"
+                placeholder="Search.."
+              />
+              <!-- <label for="inputtext-left">Search</label> -->
+            </span>
+          </div>
+          <div class="field padding-right-40">
+            <p-dropdown
+              [options]="cities"
+              [(ngModel)]="selectedCity"
+              placeholder="Select Form"
+              optionLabel="name"
+            ></p-dropdown>
+          </div>
+          <div class="field padding-right-40">
+            <p-dropdown
+              class="w-100"
+              [options]="cities"
+              [(ngModel)]="selectedCity"
+              placeholder="Select Status"
+              optionLabel="name"
+            ></p-dropdown>
+          </div>
+          <div class="field padding-right-40 d-flex calendarDiv">
+            <span class="p-inputgroup-addon"
+              ><i class="pi pi-calendar"></i
+            ></span>
+            <p-calendar
+              class="w-100"
+              inputId="basic"
+              dateFormat="dd/mm/yy"
+              [(ngModel)]="myDateValue"
+            >
+            </p-calendar>
+          </div>
+        </div>
+        <div class="md:col-3 d-flex justify-content-end">
+          <div class="field padding-right-40 text-center">
+            <p-selectButton
+              class="w-100 d-flex justify-content-end"
+              [options]="stateOptions"
+              [(ngModel)]="value1"
+              optionLabel="label"
+              optionValue="value"
+            ></p-selectButton>
+          </div>
+          <div
+            class="field padding-right-0 d-flex align-items-center cursor-pointer"
+          >
+            <img
+              src="assets/icons/downloadPage.png"
+              width="17px"
+              height="20px"
+            />&nbsp;&nbsp;
+            <div class="exportbut">Export</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="listDiv col-12 p-0 d-flex lg:flex-row md:flex-column">
+      <div class="cards padding-left-40 padding-right-40">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <p class="card-title fw-bold f18">Work Flow: Requires Location</p>
+              <div class="tag tagRed">
+                <img src="assets/icons/red.png" alt="" />
+                <div class="font-14-red">Uncomplete</div>
+              </div>
+            </div>
+            <div class="card-text">
+              <div class="d-flex">
+                <div class="from">From:</div>
+                <div class="font-16">denisgordiyenya@gmail.com</div>
+              </div>
+              <div class="d-flex">
+                <div class="to">To:</div>
+                <div class="font-16">denisgordiyenya@gmail.com</div>
+              </div>
+              <div class="d-flex">
+                <div class="duedate">Due Date:</div>
+                <div class="font-red">06 December</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <h5 class="card-title fw-bold f18">
+                Work Flow: Requires Location
+              </h5>
+              <div class="tagGreen tag">
+                <img src="assets/icons/green.png" alt="" />
+                <div class="font-14-green">Low Risk</div>
+              </div>
+            </div>
+            <div class="card-text">
+              <div class="d-flex">
+                <div class="from">From:</div>
+                <div class="font-16">denisgordiyenya@gmail.com</div>
+              </div>
+              <div class="d-flex">
+                <div class="to">To:</div>
+                <div class="font-16">denisgordiyenya@gmail.com</div>
+              </div>
+              <div class="d-flex">
+                <div class="duedate">Due Date:</div>
+                <div class="font-red">06 December</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <h5 class="card-title fw-bold f18">
+                Work Flow: Requires Location
+              </h5>
+              <div class="tag tagRed">
+                <img src="assets/icons/red.png" alt="" />
+                <div class="font-14-red">Uncomplete</div>
+              </div>
+            </div>
+            <div class="card-text">
+              <div class="d-flex">
+                <div class="from">From:</div>
+                <div class="font-16">denisgordiyenya@gmail.com</div>
+              </div>
+              <div class="d-flex">
+                <div class="to">To:</div>
+                <div class="font-16">denisgordiyenya@gmail.com</div>
+              </div>
+              <div class="d-flex">
+                <div class="duedate">Due Date:</div>
+                <div class="font-red">06 December</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <h5 class="card-title fw-bold f18">
+                Work Flow: Requires Location
+              </h5>
+              <div class="tag tagGray">
+                <img src="assets/icons/dark.png" alt="" />
+                <div class="font-14-gray">Needs Review</div>
+              </div>
+            </div>
+            <div class="card-text">
+              <div class="d-flex">
+                <div class="from">From:</div>
+                <div class="font-16">denisgordiyenya@gmail.com</div>
+              </div>
+              <div class="d-flex">
+                <div class="to">To:</div>
+                <div class="font-16">denisgordiyenya@gmail.com</div>
+              </div>
+              <div class="d-flex">
+                <div class="duedate">Due Date:</div>
+                <div class="font-red">06 December</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map w-100">
+        <p-gmap
+          #gmap
+          [style]="{ width: '100%', height: '600px', 'margin-bottom': '1em' }"
+          [options]="options"
+          [overlays]="overlays"
+          (onMapClick)="handleMapClick($event)"
+          (onOverlayClick)="handleOverlayClick($event)"
+          (onOverlayDragEnd)="handleDragEnd($event)"
+        ></p-gmap>
+
+        <p-dialog
+          showEffect="fade"
+          [(visible)]="dialogVisible"
+          header="New Location"
+        >
+          <div class="grid p-fluid" *ngIf="selectedPosition">
+            <div class="col-2"><label for="title">Label</label></div>
+            <div class="col-10">
+              <input
+                type="text"
+                pInputText
+                id="title"
+                [(ngModel)]="markerTitle"
+              />
+            </div>
+
+            <div class="col-2"><label for="lat">Lat</label></div>
+            <div class="col-10">
+              <input
+                id="lat"
+                type="text"
+                readonly
+                pInputText
+                [ngModel]="selectedPosition.lat()"
+              />
+            </div>
+
+            <div class="col-2"><label for="lng">Lng</label></div>
+            <div class="col-10">
+              <input
+                id="lng"
+                type="text"
+                readonly
+                pInputText
+                [ngModel]="selectedPosition.lng()"
+              />
+            </div>
+
+            <div class="col-2"><label for="drg">Drag</label></div>
+            <div class="col-10">
+              <p-checkbox
+                [(ngModel)]="draggable"
+                binary="true"
+                [style]="{ 'margin-top': '.25em' }"
+              ></p-checkbox>
+            </div>
+          </div>
+          <ng-template pTemplate="footer">
+            <div>
+              <button
+                type="button"
+                pButton
+                label="Add Marker"
+                icon="pi pi-plus"
+                (click)="addMarker()"
+              ></button>
+            </div>
+          </ng-template>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+</div>
